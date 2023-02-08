@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="button.css" media="screen" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<title>Create new User</title>
+</head>
+<body>
+
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-6 text-center mb-5">
+<h2 class="heading-section">Practice No.6!</h2>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-6 text-center mb-5">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Create new User <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+</div>
+</div>
+
+
+	<div class="container">
+		<form id="formUser">
+			<label>Name</label>
+			<input type="text" class="form-control" id="name"><br>
+			<label>Surname</label>
+			<input type="text" class="form-control" id="surname"><br>	
+			<label>UserType</label>
+			<select class="form-control" id="userType" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+				<option value="admin">admin</option>
+				<option value="user">user</option>
+			</select>	
+			<label>IsActive</label>
+			<select class="form-control" id="isActive" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+				<option value=true>Yes</option>
+				<option value=false>No</option>
+			</select>
+			
+			<input type="submit" id="submitBtn" class="btn" value="SUBMIT">
+		
+			
+		</form>
+	</div>
+	
+<footer>Footer</footer>
+
+<script src="jsonwriter.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>
